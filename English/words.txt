@@ -1,0 +1,25 @@
+nodejs HTML Basic ajax mysql css BootStrap Client server browser tomcat apache IIS
+java php python .net chrome safari firefox opera IE edge javascript 
+HyperText Markup Language header footer body html meta link id title style class
+!doctype html charset utf8 description content keywords script bgcolor pink 
+text purple h1 h6 align left center right br hr size color width editplus paragraph
+b strong i em s del u sub sup div span pre input table img src alt url width heigth
+a href target _self _blank url mailto javascript table tr td data border width height
+bodercolor bgcolor cellspacing cellpadding valign button rowspan colspan caption
+thead tbody tfoot order list unorder list item type start none disc circle square none
+dl dt dd header footer nav aside section article form method action enctype
+application/x-www-form-urlencoded text/plain  multipart/form-data input textarea selct option
+type name value disabled text password maxlength readonly placeholder
+submit reset button value button radio checkbox name value checked hidden
+file post enctype multipart/form-data multiple textarea cols rows
+selct option name value size selected label fieldset legend
+iframe width heigth frameborder scrolling
+input type email name search url tel number range max min step color date month week
+scheme user pwd host path params queri flag ftp ssh dns http https
+HyperText Transfer Protocol Message Request Message Response Message 
+get post put delete option Host Connection keep-alive User-Agent Accept=Language Referer
+form-data get delete post put Connection keep-alive
+Content-Type text plain html css application javascript image png jpg gif xml json
+Cache-Control max-age meta http-equiv content
+DOM Document Object Model BOM Browser Object Model onclick document getElementById
+value innerHTML

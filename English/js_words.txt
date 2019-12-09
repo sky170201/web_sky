@@ -1,0 +1,4 @@
+insert into table value
+delete from table where
+update table set value where
+select value from table where

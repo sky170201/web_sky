@@ -1,0 +1,14 @@
+a b hr img title class style meta script link i
+u s sup left right center align br size width color div 
+span div url src href target _self _blank name table tr td border cellpadding cellspacing background bgcolor valign 
+colspan rowspan caption th thead tfoot tbody ol ul li type start disc circle square none dl dt dd section aside footer
+nav article form action method get post delete put encty pe application x-www-form-urlencoded mutipart form-date 
+text plain input type name value disabled text password placeholder readonly maxlength 
+submit
+reset
+button
+value
+radio
+checkbox
+checked
+hidden file border solid dotted dashed transparent top button

@@ -1,0 +1,42 @@
+ windows Backspace Ada bug debug Microsoft server database
+table  row column mysql.exe host port user password quit  show databases  show tables  desc drop database exists create student sid varchar sex score insert values value select delete update grant revoke set phone email Ascll tedu 
+Unicode charset tinyint smallint bigint float double decimal
+bool date time datetime varchar char primary key not null unique check default foreign key 
+
+typeof undefined number NaN parseInt parseFloat toString alert prompt default cls break continue function encodeURI
+ decodeURI  isNaN false isFinite  Infinity eval  new Object
+ person hasOwnProperty  join  concat slice start end reverse
+ sort   return push  pop   unshift  splice count value   length  charAt charCodeAt  indexOf   lastIndexOf toUpperCase
+ toLowerCase substr(start,count)   slice(start,end)   substring(start,end) split( sep )  search()  match()  replace()     i-ignore  g-global Math  PI  abs()  round()
+ ceil()  floor()  max()  min()  random()  toFixed Boolean
+  new Date()   getFullYear getMonth getDate getHours  getMinutes getSeconds getMilliseconds   getDay   getTime
+  toLocaleString   toLocaleDateString    toLocaleTimeString
+  setFullYear setMonth   setHours setMinutes setSeconds setMilliseconds  setTime sort
+ console.log()  console.info()  console.warn()  console.error()  console.time()  console.timeEnd() process  arch   platform  version  env   kill()  pid Buffer   
+let timer=setTimeout  clearTimeout(timer) 
+
+let timer=setInterval  clearInterval(timer)   let timer=setImmediate  process.nextTick exports  require
+ module filename dirname require()   exports  global
+ module.exports __filename  __dirname     npm  install  
+  stringify()   parse()   format()   fs.stat(path, callback) 
+
+ fs.statSync(path)    path     callback     stats    err 
+
+     isFile() isDirectory()    fs.mkdir(path,callback)
+  fs.mkdirSync(path)   fs.readdir(path,callback) 
+   fs.readdirSync(path)    fs.rmdir(path,callback) rmdirSync(path)    fs.writeFile(path,data,callback)
+         writeFileSync(path,data)
+    fs.appendFile(path,data,callback)
+  fs.appendFileSync(path,data) 
+   fs.unlink(path,callback)  unlinkSync(path)
+   
+    fs.existsSync(path)    fs.createReadStream(path)
+       fs.createWriteStream(path)
+
+     req.method    req.url    res.writeHead    res.write() 
+      res.end()   
+
+
+
+
+

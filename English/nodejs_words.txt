@@ -1,0 +1,8 @@
+global window console.log info error time timeEnd process process arch platpform env pid Buffer version env String toString setTimeout clearTimeout timer setImmediate clearImmediate
+setInterval process nextTick exports require module _filename _dirname
+CommonJS npm parse stringify parse format fs stat path callback statSync isFile isDirectory
+mkdir mkdirSync readdir readdirSync rmdir rmdirSync writeFileSync appendFile readFileSync
+unlinkSync existsSync createReadstream createWritestream
+Request URL Method code response Accept-Ranges content-length Content-Encoding Content-Encoding location href createServer writeHead zlib express send redirect redirect sendFile
+express Router get module exports router userRouter static querystring bodyparser urlencoded
+extended-false mysql createConnection createPool query affectedRows

@@ -1,0 +1,54 @@
+margin:0
+padding-top
+padding-bottom
+padding-left
+padding-right
+padding:v1 v2 v3 v4
+padding:v1 v2 v3
+padding:v1 v2
+box-sizing
+content-box
+border-box
+background-color
+background-image
+background-image:url
+background-repeat
+repeat
+no-repeat
+no-repeat
+repeat-y
+background-size
+contain
+background-attachment
+scroll
+fixed
+background-position
+left
+center
+right
+top
+center
+bottom
+background-position:right top
+background:color url() 
+repeat attachment position
+background-image
+background-image
+linear-gradient(angle,color-point1)
+to top
+to bottom
+to left
+to right
+0deg
+color-point
+background-image:radial-gradient([size at position] color-point1)
+background-image:repeating-linear-gradient
+background-image:repeating-radial-gradient
+font-family
+font-weight
+bold
+normal
+font-style
+italic
+font-variant
+font style variant weight size family

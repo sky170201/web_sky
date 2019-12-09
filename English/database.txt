@@ -1,0 +1,6 @@
+set charset names table tables database show databases drop if exists create utf8 use int varchar insert into select from
+values delete from where update primary key tinyint smallint bigint bouble decimall float bool boolean true false datetime
+char text constraint set names utf8 drop database if exists  create database charset utf8 use  create table emp int primary
+key tinyint smallint int bigint date time datetime double decimal bool boolean float text varchar char unique not null 
+default check mysql foriegn key references select from where delete from update update auto_increment as asc desc
+order by is not null is null in between like limit warnings as by or count sum avg max min group left right union
