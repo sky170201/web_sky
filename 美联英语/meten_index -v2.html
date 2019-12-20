@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,a,ul,li,input,h2,p,h3,h4{margin:0;padding:0;list-style:none;text-decoration:none;outline:0;border:0;}
+		body{background:#f0f0f0;}
+		.top{width:100%;height:40px;background:#f0f0f0;}
+		.top_info{width:1200px;height:40px;font-size:14px;color:#333;margin:0 auto;position:relative;}
+		.top_right{float:right;width:289px;height:40px;line-height:40px;position:relative;}
+		.info_left{width:72px;height:40px;float:left;line-height:40px;cursor:pointer;}
+		.info_right{float:left;line-height:40px;margin-left:5px;cursor:pointer;}
+		.info_tel{position:absolute;top:0px;right:0px;line-height:40px;}
+		.header{width:100%;height:80px;background:#fff;}
+		.header_content{width:1200px;height:80px;margin:0 auto;}
+		.header_content_left{width:271px;height:80px;float:left;padding-top:20px;}
+		.header_content_left img{vertical-align:middle;}
+		.header_content_left left_logo{width:110px;height:80px;float:left;}
+		.header_content_left .img1{display:block;padding:3px 0px 0px 20px;float:left;}
+		.header_content_left .img2{display:block;float:left;margin:11px 0px 0px;}
+		.header_content_left span{display:block;float:left;width:52px;height:28px;text-align:center;line-height:28px;color:#333;font-size:16px;}
+		.header_content_left_right{width:136px;height:40px;float:right;margin-top:-40px;margin;margin-right:0px;border-left:1px solid #888;margin-left:30px;}
+		.posi{margin-top:4px;}
+		.header_content_right{width:876px;height:80px;float:right;}
+		.header_content_right>ul{height:80px;line-height:80px;margin:0;padding:0;}
+		.header_content_right>ul>li{float:left;padding:0px 30px;height:80px;text-align:center;line-height:80px;cursor:pointer;font-size:16px;}
+		.pic{width:100%;height:400px;background:#015c88 url(image/banner-qyc.png) -230px;background-size:1920px 400px;position:absolute;}
+		.module0{width:1200px;height:370px;margin:0 auto;position:relative;}
+		.module0_word{width:628px;position:absolute;top:88px;left:226px;}
+		.module0_word>h2{font-size:44px;color:#fff;display:block;text-align:center;margin-top:20px;margin-bottom:24px;}
+		.module0_word>h3{font-size:22px;height:50px;width:390px;margin:0 auto;line-height:50px;padding:0 20px;text-align:center;color:#015c88;text-align:center;background:#fff;font-weight:400;}
+		.ban_btn{width:190px;height:46px;line-height:46px;border-radius:5px;color:#015c88;cursor:pointer;background:#fff;text-align:center;margin:35px auto;}
+		.module0_border{width:340px;background:#fff;position:absolute;top:80px;left:830px;border-radius:5px;}
+		.module0_border_label{width:96px;height:96px;background:url(image/reg-label01.png);position:absolute;top:-45px;right:-20px;}
+		.module0_border_label>span{color:#ffa019;font-size:16px;position:absolute;top:36px;left:20px;}
+		.module0_border_label>div{color:#fefefe;font-size:16px;position:absolute;top:63px;left:14px;}
+		.module0_border_word{color:#333;font-weight:700;font-size:20px;height:75px;line-height:75px;text-align:center;display:block;margin:0;padding:0;}
+		.module0_border_word>span{color:#86c138;}
+		.reg_input{width:298px;height:44px;line-height:44px;margin:0 auto 15px;border:1px solid #d8d8d8;color:#999;
+								background:url(image/phone-icon.png) no-repeat 15px center;
+								display:block;border-radius:3px;text-align:center;font-size:16px;outline:0;}	
+		.reg_btn{height:44px;width:300px;margin:0 auto;border-radius:3px;text-align:center;line-height:44px;background:#86c138;color:#fff;font-size:18px;cursor:pointer;}
+		.reg_btn_count{color:#666;font-size:16px;padding:10px 0 20px;text-align:center;}
+		.reg_btn_count>span{color:#86c138;}
+		.metentips{width:100%;height:30px;background:#f7f7f7;border-radius:0 0 5px 5px;}
+		.tip_info{width:220px;height:30px;margin:0 auto;}
+		.checkBox{width:16px;height:16px;border:1px solid #999;border-radius:2px;margin-top:6px;cursor:pointer;float:left;line-height:16px;}
+		.tip_info span,a{float:right;font-size:14px;color:#999;line-height:30px;}
+		.module1{width:1200px;height:400px;margin:0 auto 15px;position:relative;background:url(image/module01-bg.jpg);padding:50px 0;box-shadow:rgba(0,0,0,0.2);}
+		.module1>h2{width:100%;font:34px "Microsoft YaHei";color:#333;text-align:center;font-weight:700;}
+		.module1>.select{width:670px;margin:0 auto;}
+		.module1>.select>ul{padding-top:55px;}
+		.module1>.select>h4{border-left:4px solid #86c138;font-size:18px;font-weight:bold;padding-left:20px;margin:20px 0;}
+		.module1>.select>ul{padding-left:160px;height:100px;color:#333;}
+		.module1>.select>ul>li{float:left;font-size:16px;height:50px;width:33.33%;line-height:50px;position:relative;}
+		.module1>.select>ul span{width:28px;height:28px;border:1px solid #999;border-radius:3px;display:block;position:absolute;top:12px;left:-40px;}
+		.assess{width:520px;margin:-35px auto 0px;}
+		.ass_input{width:350px;height:44px;text-align:center;border-radius:3px;line-height:44px;border:1px solid #999;background:url(image/phone-icon.png) no-repeat 20px center;font-size:16px;color:#999;}
+		.ass_d1{float:right;width:167px;height:44px;line-height:44px;background:#86c138;border-radius:5px;color:#fff;
+		font-size:16px;font-weight:700;cursor:pointer;text-align:center;}
+		.ass_tip{width:225px;margin:0 auto;font-size:14px;color:#999;height:40px;line-height:40px;margin-top:15px;}
+		.ass_box{width:16px;height:16px;border:1px solid #999;border-radius:2px;cursor:pointer;}
+		.ass_tip a{margin-top:5px;}
+		.module2{width:1200px;height:415px;margin:0 auto 15px;position:relative;background:#fff;padding-top:50px;box-shadow:2px 2px 15px rgba(0,0,0,0.2);}
+		.topic h2{width:100%;font:34px "Microsoft YaHei";color:#333;text-align:center;font-weight:700;}
+		.module2 li{float:left;width:248px;height:250px;border:1px solid #aaa;margin-right:20px;text-align:center;padding:4px 0 30px;border-radius:3px;position:relative;}
+		.detail{width:1080px;display:block;margin:0 auto;padding:40px 0 50px 20px;}
+		.detail h3{position:absolute;top:97px;left:2px;width:242px;height:40px;line-height:40px;font-weight:700;
+		border-radius:3px;background:rgba(0,0,0,.5);color:#fff;font-size:18px;}
+		.detail p{font-size:16px;color:#333;text-align:center;padding:15px 0;}
+		.detail a{background:rgba(134,193,56,1);width:167px;height:44px;line-height:44px;border-radius:5px;color:#fff;font-size:16px;font-weight:700;cursor:pointer;text-align:center;display:block;margin:0 40px;}
+		.module3,.module4,.module5,.module6,.module7,.module8,.module9{width:1200px;margin:0 auto 15px;position:relative;background:#fff;padding:50px 0;box-shadow:2px 2px 15px rgba(0,0,0,0.2);}
+		.module3>.map{width:1096px;height:438px;}
+		.module4{background:url(image/module07-img.png) no-repeat 58px 156px #fff;height:420px;}
+		.module4 ul{display:block;padding:50px 0 20px 300px;}
+		.module4 li{float:left;width:390px;height:110px;background:#f3fde6;color:#333;font:16px "Microsoft YaHei";padding:5px;margin:0 30px 30px 0;border_radius:5px;border:1px solid #86c138;}
+		.li1_left{float:left;background:#86c138;border-radius:5px;width:110px;height:85px;color:#fff;font-size:22px;font-weight:700px;text-align:center;padding-top:25px;line-height:35px;position:relative;}
+		.jtou{border:12px solid transparent;border-left-color:#86c138;position:absolute;top:42%;right:-24px;}
+		.li1_right{width:279px;height:85px;float:right;border:1px dotted #86c138;border-left:0;font-size:18px;padding-top:25px;line-height:35px;text-align:center;border-radius:5px;}
+		.li2_left{background:#57b380;}
+		.jtou2{border-left-color:#57b380;}
+		.module4 .li2{background:#f6fffa;}
+/*		.module4 .li2_right{border:1px dotted #f6fffa;}*/
+		.li3_left{background:#97ae6c;}
+		.jtou3{border-left-color:#97ae6c;}
+		.module4 .li3{background:#fbfff3;}
+/*		.module4 .li3_right{border:1px dotted #fbfff3;}*/
+		.li4_left{background:#73a83d;}
+		.jtou4{border-left-color:#73a83d;}
+		.module4 .li4{background:#f4fdeb;}
+		.module5{background:url(image/ai-bg.jpg);height:340px;}
+		.module5>ul{display:block;margin:0 35px;padding-top:40px;}
+		.module5>ul>li{float:left;width:226px;position:relative;text-align:center;cursor:pointer;}
+		.module5 h3{font-size:18px;font-weight:700;color:#333;}
+		.module5 p{font-size:16px;color:#333;}
+		.li_list{background:url(image/module26-line.png) no-repeat left;}
+
+		.footer{width:100%;padding:50px 0px 20px;background:#333;color:#ccc;}
+		.footer::after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.footer_top{width:1200px;margin:0 auto;}
+		.footer_top>ul{display:flex;justify-content:space-around;}
+		.footer_top>ul img,h4,p{float:left;}
+		.footer_top>ul img{vertical-align:baseline;margin-right:10px;}
+		.footer_top>ul h4{color:#fff;text-align:left;margin-bottom:13px;}
+		.footer_top>ul p{color:#999;text-align:left;}
+		.footer_mid{width:1200px;margin:0 auto;padding-top:50px;}
+		.footer_mid::after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.mid_list>ul{width:620px;height:120px;float:left;}
+		.mid_list>ul>li{width:25%;height:20px;float:left;margin-bottom:30px;}
+		.mid_list>ul>li>a{float:left;font-size:16px;color:#ccc;}
+		.list_a1{color:#ccc; font-weight:700;}
+		.list_li2{margin-bottom:0;}
+		.list_li2>a{color:#ccc;}
+		.mid_tel{width:172px;float:left;}
+		.phone,.online{float:left;}
+		.phone{padding-bottom:30px;}
+		.mid_tel_top>span{display:inline-block;width:42px;height:42px;background:url(image/footer-tel-icon.png);float:left;margin-right:15px;}
+		.mid_tel_bot>span{display:inline-block;width:42px;height:42px;background:url(image/footer-ask-icon.png);float:left;margin-right:15px;}
+		.mid_right{float:right;width:300px;padding-right:30px;}
+		.code{display:flex;justify-content:space-around;}
+		.code>div{align-self:center;}
+		.code>div>img{margin-bottom:10px;padding-left:5px;}
+		.footer_bot{width:100%;}
+		.bot_list{width:800px;height:104px;padding:50px 200px 0px 200px;margin:0 auto;
+			display:flex;flex-flow:row wrap;
+		}
+		.bot_list ul{display:flex;}
+		.bot_list>ul>h3{color:#999;font-size:16px;}
+		.bot_list>ul>li{margin-left:15px;}
+		.bot_list>span>a{text-align:left;font-size:16px;color:#999;}
+		#metenpos{width:485px;margin:10px auto;}
+		#metenpos>.span2>a{text-align::left;}
+		#metenpos>p{margin:10px 0px;}
+		#fix{position:fixed;width:65px;top:80px;right:0px;background:#86c138;z-index:9988;
+				font-size:12px;color:#fff;}
+				#fix li{height:59px;}
+				#fix li>p{padding:0 8px;}
+	</style>
+</head>
+<body>
+		<div id="fix">
+			<ul>
+				<li>
+					<img src="image/fr-div-new-hover-icon01.png" alt="">
+					<p>课程咨询</p>
+				</li>
+				<li>
+					<img src="image/fr-div-new-hover-icon01.png" alt="">
+					<p>课程咨询</p>
+				</li>
+				<li>
+					<img src="image/fr-div-new-hover-icon01.png" alt="">
+					<p>课程咨询</p>
+				</li>
+				<li>
+					<img src="image/fr-div-new-hover-icon01.png" alt="">
+					<p>课程咨询</p>
+				</li>
+				<li>
+					<img src="image/fr-div-new-hover-icon01.png" alt="">
+					<p>课程咨询</p>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<div class="top">
+				<div	class="top_info">
+					<div class="top_right">
+						<div class="info_left">全站导航</div>
+						<div class="info_right">
+							<span>注册</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>登录</span>
+						</div>
+						<div class="info_tel">
+							<img src="image/new-hd-tel-icon.png" alt="">
+							<span>400-700-1003</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header">
+				<div class="header_content">
+					<div class="header_content_left">
+						<div class="left_logo">
+							<img src="image/logo_new.png" alt="">
+						</div>
+						<div class="header_content_left_right">
+							<div class="posi">
+								<img class="img1" src="image/pos-icon01.png" alt="">
+								<span>深圳</span>
+								<img class="img2" src="image/new-tr-icon.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="header_content_right">
+						<ul>
+							<li>首页</li>
+							<li>课程设置</li>
+							<li>授课老师</li>
+							<li>校区分布</li>
+							<li>学习费用</li>
+							<li>教学服务</li>
+							<li>关于美联</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pic"></div>
+			<div class="topic">
+				<div class="module0">
+					<div class="module0_word">
+						<h2>深圳一对一英语外教</h2>
+						<h3>欧美外教 | 一对一小班学习 | 自信说口语</h3>
+						<div class="ban_btn">评估学费</div>
+					</div>
+					<div class="module0_border">
+						<div class="module0_border_label">
+							<span>价值</span>
+							<div>450元</div>
+						</div>
+						<h2 class="module0_border_word">领取<span>免费</span>试听课</h2>
+						<input class="reg_input" type="tel" maxlength="11" value="请输入手机号" onfocus="if(value=='请输入手机号'){value=''}" onblur="if(value==''){value='请输入手机号'}">	
+						<div class="reg_btn">立即领取</div>
+						<div class="reg_btn_count"><span>759742</span>位用户已预约</div>
+						<div class="metentips">
+							<div class="tip_info">
+								<div class="checkBox">
+									<img src="image/chooseBtn01.png" alt="">
+								</div>
+								<span>
+									同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="module1">
+					<h2>深圳一对一英语培训需要多少钱</h2>
+					<div class="select">
+						<h4>请选择学习目标</h4>
+						<ul>
+							<li><span></span>日常口语</li>
+							<li><span></span>职场交流</li>
+							<li><span></span>个人储备</li>
+							<li><span></span>出国旅游</li>
+							<li><span></span>雅思托福</li>
+							<li><span></span>青少英语</li>
+						</ul>
+						<h4>请选择学习方式</h4>
+						<ul>
+							<li><span></span>1-4人小班</li>
+							<li><span></span>1对1定制</li>
+							<li><span></span>在线课程</li>
+						</ul>
+					</div>
+					<div class="assess">
+						<input type="tel" maxlength="11" class="ass_input" value="请输入手机号，评估学习费用" onfocus="if(value=='请输入手机号，评估学习费用'){value=''}" onblur="if(value==''){value='请输入手机号，评估学习费用'}">
+						<div class="ass_d1">免费评估</div>
+						<div class="ass_tip">
+							<span class="ass_box">
+								<img src="image/chooseBtn01.png" alt="">
+							</span>
+							<span>
+								&nbsp;&nbsp;同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
+							</span>
+						</div>
+					</div>	
+				</div>
+				<div class="module2">
+					<h2>深圳精选英语一对一课程 让你自信说英语</h2>
+					<ul class="detail">
+						<li>
+							<div>
+								<img src="image/module02-img01.jpg" alt="">
+								<h3>零基础英语1对1课</h3>
+							</div>
+							<p>从准确发音到自信说英语</p>
+							<a href="">免费试听</a>
+						</li>
+						<li>
+							<div>
+								<img src="image/module02-img02.jpg" alt="">
+								<h3>实用口语1对1课</h3>
+							</div>
+							<p>满足日常交流沟通所需</p>
+							<a href="">免费试听</a>
+						</li>
+						<li>
+							<div>
+								<img src="image/module02-img03.jpg" alt="">
+								<h3>商务英语1对1课</h3>
+							</div>
+							<p>商务职场英语顺畅沟通</p>
+							<a href="">免费试听</a>
+						</li>
+						<li>
+							<div>
+								<img src="image/module02-img04-aiQyc.jpg" alt="">
+								<h3>雅思托福1对1课</h3>
+							</div>
+							<p>夯实基础，锻炼应试能力</p>
+							<a href="">免费试听</a>
+						</li>
+					</ul>
+				</div>
+				<div class="module3">
+					<h2>深圳一对一英语培训 就选身边的校区</h2>
+					<div class="map"></div>
+				</div>
+				<div class="module4">
+					<h2>深圳英语学习小工具 懂你所需</h2>
+					<ul>
+						<li class="li1">
+							<div class="li1_left">
+								水平
+								<br>
+								测试
+								<div class="jtou"></div>
+							</div>
+							<div class="li1_right">
+								免费测试英语水平
+								<br>
+								高效学习，从定位开始
+							</div>
+						</li>
+						<li class="li1 li2">
+							<div class="li1_left li2_left">
+								课程
+								<br>
+								介绍
+								<div class="jtou jtou2"></div>
+							</div>
+							<div class="li1_right li2_right">
+								科学设置课程大纲
+								<br>
+								每一节课，都满满的收货
+							</div>
+						</li>
+						<li class="li1 li3">
+							<div class="li1_left li3_left">
+								速成
+								<br>
+								指导
+								<div class="jtou jtou3"></div>
+							</div>
+							<div class="li1_right li3_right">
+								中教外教速成指导
+								<br>
+								是的，速成是有方法的
+							</div>
+						</li>
+						<li class="li1 li4">
+							<div class="li1_left li4_left">
+								搭伴
+								<br>
+								学习
+								<div class="jtou jtou4"></div>
+							</div>
+							<div class="li1_right li4_right">
+								搭伴学习互相督促
+								<br>
+								开心学习，收获能力和友谊
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="module5">
+					<h2>深圳美联贴心服务 让您省时更省心</h2>
+					<ul>
+						<li>
+							<img src="image/module26-icon01.png" alt="">
+							<h3>体验式学习</h3>
+							<p>轻松快乐说英语</p>
+						</li>
+						<li class="li_list">
+							<img src="image/module26-icon02.png" alt="">
+							<h3>6对1服务</h3>
+							<p>指导督促 相辅相成</p>
+						</li>
+						<li class="li_list">
+							<img src="image/module26-icon03.png" alt="">
+							<h3>时间自由</h3>
+							<p>7*24h自由约课</p>
+						</li>
+						<li class="li_list">
+							<img src="image/module26-icon04.png" alt="">
+							<h3>1-4人小班</h3>
+							<p>实时互动 大胆开口</p>
+						</li>
+						<li class="li_list">
+							<img src="image/module26-icon05.png" alt="">
+							<h3>兴趣课堂</h3>
+							<p>轻松快乐 说出口语</p>
+						</li>
+					</ul>
+				</div>
+				<div class="module6">
+					<h2>英语一对一培训 选择深圳美联英语</h2>
+				</div>
+				<div class="module7">
+					<h2>深圳口语课 让你自信说英语</h2>
+				</div>
+				<div class="module8">
+					<h2>免费领取 英语学习大礼包 深圳全部校区通用</h2>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer_top">
+					<ul>
+						<li>
+							<img src="image/footer-icon01.png" alt="">
+							<h4>英语教师团队</h4>
+							<p>英语教师发展培训体系</p>
+						</li>
+						<li>
+							<img src="image/footer-icon02.png" alt="">
+							<h4>学习方案</h4>
+							<p>1对1定制英语学习</p>
+						</li>
+						<li>
+							<img src="image/footer-icon03.png" alt="">
+							<h4>线下线上结合</h4>
+							<p>线下系统学，线上自由练</p>
+						</li>
+						<li>
+							<img src="image/footer-icon04.png" alt="">
+							<h4>免费辅导</h4>
+							<p>专职老师英语学习辅导</p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_mid">
+					<div class="mid_list">
+						<ul>
+							<li><a class="list_a1" href="">关于我们</a></li>
+							<li><a class="list_a1" href="">售后保障</a></li>
+							<li><a class="list_a1" href="">掌上学习</a></li>
+							<li><a class="list_a1" href="">免费服务</a></li>
+							<li><a href="">发展历程</a></li>
+							<li><a href="">订课app</a></li>
+							<li><a href="">小程序</a></li>
+							<li></li>
+							<li class="list_li2"><a href="">联系我们</a></li>
+							<li class="list_li2"><a href="">投诉建议</a></li>
+							<li class="list_li2"><a href="">趣味单词</a></li>
+							<li class="list_li2"><a href="">在线测试</a></li>
+						</ul>
+						<div class="mid_tel">
+							<div class="mid_tel_top">
+								<span></span>
+								<div class="phone">
+									<span>全国热线</span><br>
+									<a href="">400-700-1003</a>
+								</div>
+							</div>
+							<div class="mid_tel_bot">
+								<span></span>
+								<div class="online">
+									<span>在线客服</span><br>
+									<span>点击咨询</span>
+								</div>
+							</div>
+						</div>
+						<div class="mid_right">
+							<div class="code">
+								<div>
+									<img src="image/footer-qrCode01-new.jpg" alt=""><br>
+									<p>领取英语面授课</p>
+								</div>
+								<div>
+									<img src="image/footer-qrCode03.jpg" alt=""><br>
+									<p>美联英语官方微信</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_bot">
+					<div class="bot_list">
+						<h3>美联国际教育集团旗下品牌：</h3>
+						<ul>
+							<li>美联英语</li>
+							<li>美联出国考试</li>
+							<li>美联青少英语</li>
+							<li>立刻说（在线）</li>
+							<li>ABC青少英语</li>
+						</ul>
+						<div id="metenpos">
+							<span>深圳市美联国际教育有限公司</span>	
+							<span class="span2">
+								粤ICP备12018421号
+							</span>
+							<p>总部地址：深圳市南山区北环大道深云西二路天健创智中心A塔3楼</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
